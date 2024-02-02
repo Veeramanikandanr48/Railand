@@ -1,0 +1,31 @@
+
+GET http://localhost:3000/blogs
+
+###
+GET http://localhost:3000/blogs/65bd0cb9e2c3d04860a8d25e
+
+###
+POST http://localhost:3000/blogs
+Content-Type: application/json 
+
+{
+  "title": "Introduction to Digital Marketing",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ultrices fringilla.",
+  "author": "John Doe",
+  "imageUrl":"https://imgs.search.brave.com/q1LfdV9YRvahK6U3b6iCYGwsp9B2DwP5EZUREYeG8jg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNmJpNndL/SU01RERNNVUxUHRH/VkZjUC8xYzdmY2U2/ZGUzM2JiNjU3NTU0/OGE2NDZmZjliMDNh/YS9uYXR1cmUtcGhv/dG9ncmFwaHktcGlj/dHVyZXMuanBnP2Zp/dD1maWxsJnc9NjAw/Jmg9NDAw"
+}
+
+###
+PUT http://localhost:3000/blogs/65bd16ae7a169e55da21d1b6
+Content-Type: application/json 
+
+{
+  "title": "Introduction to Digital Marketing",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ultrices fringilla.",
+  "author": "Veera",
+  "imageUrl":"https://imgs.search.brave.com/q1LfdV9YRvahK6U3b6iCYGwsp9B2DwP5EZUREYeG8jg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNmJpNndL/SU01RERNNVUxUHRH/VkZjUC8xYzdmY2U2/ZGUzM2JiNjU3NTU0/OGE2NDZmZjliMDNh/YS9uYXR1cmUtcGhv/dG9ncmFwaHktcGlj/dHVyZXMuanBnP2Zp/dD1maWxsJnc9NjAw/Jmg9NDAw"
+}
+
+###
+
+DELETE http://localhost:3000/blogs/65bd16ae7a169e55da21d1b6

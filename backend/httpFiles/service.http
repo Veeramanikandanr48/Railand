@@ -1,0 +1,27 @@
+GET http://localhost:3000/services
+
+###
+GET http://localhost:3000/services/65bd1db0e2c3d04860a8d26d
+
+###
+POST http://localhost:3000/services
+Content-Type: application/json
+
+{
+    "title": "Search Engine Optimization (SEO)",
+    "description": "Boost your website's visibility on search engines.",
+    "features": ["Keyword Research", "On-Page SEO", "Backlink Building"]
+  }
+
+###
+PUT http://localhost:3000/services/65bd1f0af6fdf9db79de05ad
+Content-Type: application/json
+
+{
+    "title": "Search Engine Optimization (CEO)",
+    "description": "Boost your website's visibility on search engines.",
+    "features": ["Keyword Research", "On-Page SEO", "Backlink Building"]
+  }
+
+###
+DELETE http://localhost:3000/services/65bd1f0af6fdf9db79de05ad
