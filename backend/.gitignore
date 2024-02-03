@@ -1,0 +1,63 @@
+# Ignore compiled binaries
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore logs and databases
+*.log
+*.sqlite
+*.sql
+
+# Ignore package manager files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+.env.local
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files and directories
+.vscode/
+.idea/
+
+# Ignore build output
+/build/
+/dist/
+
+# Ignore dependency directories
+/bower_components/
+/vendor/
+
+# Ignore Jekyll build directory
+_site/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+.env/
+
+# Ignore generated files
+*.min.js
+*.min.css
+
+# Ignore backup files
+*~
+*.swp
+
+# Ignore .gitignore itself
+!.gitignore
