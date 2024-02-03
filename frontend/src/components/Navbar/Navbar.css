@@ -1,0 +1,48 @@
+/* Navbar.css */
+.navbar-nav .active::before {
+    content: '\2022'; /* Unicode character for bullet point */
+    color: #007bff;
+    margin-right: 8px; /* Adjust the margin for spacing */
+  }
+  
+  .nav-item {
+    position: relative;
+    padding-right: 40px;
+    font-family: 'Questrail';
+  }
+  
+  .nav-link {
+    font-size: 18px;
+  }
+  
+  .navbar {
+    background-color: white;
+  }
+  .btn-contact{
+    border-radius: 20px;
+    padding: 16px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #3851d1;
+    color: #fff;
+  }
+
+  .btn:hover {
+    background-color: #2f45a6; /* Darker color on hover */
+    color: white;
+  }
+  
+  /* Add this new style for the bullet */
+  .nav-item::before {
+    content: '\2022'; /* Unicode character for bullet point */
+    color: transparent; /* Make it transparent by default */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

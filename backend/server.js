@@ -3,12 +3,14 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const blogRoutes = require("./routes/blogRoutes");
 const serviceRoutes = require('./routes/serviceRoutes')
+const cors = require("cors");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 8000;
 
 // Middleware to parse JSON requests
 app.use(bodyParser.json());
+app.use(cors());
 
 // MongoDB connection
 const connectToMongoDB = async () => {

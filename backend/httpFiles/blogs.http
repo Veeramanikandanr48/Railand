@@ -1,5 +1,5 @@
 
-GET http://localhost:3000/blogs
+GET http://localhost:8000/blogs
 
 ###
 GET http://localhost:3000/blogs/65bd0cb9e2c3d04860a8d25e

@@ -1,0 +1,41 @@
+/* Footer.css */
+.footer-sec {
+    padding: 20px;
+    margin-top: 20px; /* Add margin for better separation from the content */
+  }
+  
+  .about-us-sec {
+    margin-top: 30px;
+  }
+  
+  .social-logo {
+    width: 15px;
+    margin: 10px;
+  }
+  
+  .social-logo:last-child {
+    margin-right: 0;
+  }
+  
+  /* Optional: Add specific styles for small screens */
+  @media (max-width: 768px) {
+    .footer-logo {
+      max-width: 70%; /* Adjust as needed */
+    }
+  
+    .footer-head {
+      font-size: 1.2rem; /* Adjust as needed */
+    }
+  
+    .copy-right-sec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .social-media-icons {
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+/* ServicesPage.css */
+
+.service-card {
+    border: 1px solid #ddd; /* Add a border for a card-like appearance */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .service-description {
+    color: #555;
+  }
+  
+  .service-features {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-features li {
+    margin-bottom: 5px;
+  }
+  
+  .service-button {
+    margin-top: 15px;
+  }
+  

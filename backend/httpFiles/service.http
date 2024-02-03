@@ -1,4 +1,4 @@
-GET http://localhost:3000/services
+GET http://localhost:8000/services
 
 ###
 GET http://localhost:3000/services/65bd1db0e2c3d04860a8d26d

@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+/* LandingPage.css */
+:root {
+  --body-font-family: 'Inter', sans-serif;
+  --body-font-size: 16px;
+  --body-font-weight: 400;
+  --body-font-color: #2e3c40;
+  --body-line-height: 1.45;
+  --heading-font-family: 'Inter', sans-serif;
+  --heading-font-color: #000103;
+  --link-font-color: #000103;
+  --link-hover-font-color: #4153d4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  color: var(--body-font-color);
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  color: var(--heading-font-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.attach{
+  background-attachment: fixed;
+  overflow: auto;
 }
