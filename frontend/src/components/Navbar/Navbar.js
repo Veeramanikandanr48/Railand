@@ -1,6 +1,5 @@
-// NavigationBar.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const NavigationBar = () => {
@@ -20,41 +19,32 @@ const NavigationBar = () => {
     { id: '', label: 'Home' },
     { id: 'blog', label: 'Blog' },
     { id: 'services', label: 'Services' },
+    { id: 'about', label: 'About Us' },
   ];
 
   return (
-    <nav className="navbar navbar-expand-lg p-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light p-3">
       <div className="container">
-        <Link className="navbar-brand d-flex align-items-center" to="/home">
-          {/* Use Link instead of 'a' tag */}
-          <img
-            src="https://res.cloudinary.com/dpcfyn3si/image/upload/v1706613773/Wabeler/z18abxn6u6o1cmssmoxf.png"
-            alt="website logo"
-            className="website-logo"
-          />
-          <h1 className="web-head">Raft</h1>
-        </Link>
+        <div className="navbar-header d-flex align-items-center">
+          <Link className="navbar-brand" to="/">
+            <img src="https://res.cloudinary.com/dpcfyn3si/image/upload/v1707019334/fadh3gidswa9iapkidkf.png" width="30%" alt="weblogo" />
+          </Link>
+          <button
+            className={`navbar-toggler ${isNavOpen ? '' : 'collapsed'}`}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded={isNavOpen}
+            aria-label="Toggle navigation"
+            onClick={handleToggle}
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
-        <button
-          className={`navbar-toggler ${isNavOpen ? '' : 'collapsed'}`}
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded={isNavOpen}
-          aria-label="Toggle navigation"
-          onClick={handleToggle}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          className={`collapse navbar-collapse justify-content-end align-items-center ${
-            isNavOpen ? 'show' : ''
-          }`}
-          id="navbarNav"
-        >
-          <ul className="navbar-nav d-flex justify-content-center">
+        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav ml-auto">
             {navItems.map((item) => (
               <li key={item.id} className={`nav-item ${activeNavItem === item.id ? 'active' : ''}`}>
                 <Link
@@ -69,8 +59,7 @@ const NavigationBar = () => {
             ))}
           </ul>
 
-          <Link className="btn btn-contact btn-pill btn-blue ml-32 contact-us" to="/contactus">
-            {/* Use Link instead of 'a' tag */}
+          <Link className="btn btn-contact btn-pill btn-primary ml-2" to="/contactus">
             Contact Us
           </Link>
         </div>

@@ -1,35 +1,26 @@
-/* ServicesPage.css */
+.services-item-details-container {
+  font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the actual font name */
+  transition: background-color 0.3s ease-in-out;
+}
 
-.service-card {
-    border: 1px solid #ddd; /* Add a border for a card-like appearance */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05); /* Enlarge the card on hover */
-  }
-  
-  .service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .service-description {
-    color: #555;
-  }
-  
-  .service-features {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .service-features li {
-    margin-bottom: 5px;
-  }
-  
-  .service-button {
-    margin-top: 15px;
-  }
-  
+.services-details-card-heading,
+.services-benefit-heading,
+.request-heading-services {
+  color: black; /* Blue heading color */
+  font-size: 30px; /* Adjust heading font size */
+}
+
+.services-details-card-para,
+.services-benefit-para {
+  color: gray; /* Dark text color */
+  font-size: 16px; /* Adjust paragraph font size */
+}
+
+.btn-contact {
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+}
+
+.btn-contact:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
